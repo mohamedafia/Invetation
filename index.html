@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>دعوة زفاف محمد و أميرة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@400;500&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6EFE2;--ink:#2A1A12;--accent:#8A4320;--gold:#A87414;--panel:#EADFCB;--line:#C9B48F;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F2624;--ink:#F1E7D3;--accent:#E0A75A;--gold:#E0A75A;--panel:#17332F;--line:#3A5A54}}
+:root[data-theme="dark"]{--bg:#0F2624;--ink:#F1E7D3;--accent:#E0A75A;--gold:#E0A75A;--panel:#17332F;--line:#3A5A54}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tajawal,sans-serif;font-size:18px;line-height:1.8;text-align:center}
+html[lang=en] body{font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;line-height:1.6}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.lang{position:absolute;top:calc(env(safe-area-inset-top,0px) + 14px);inset-inline-start:16px;background:none;border:1px solid var(--line);border-radius:20px;padding:2px 14px;z-index:2}
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:70px 20px 50px;position:relative}
+.arch{width:min(86vw,420px);border:2px solid var(--gold);border-radius:999px 999px 0 0;padding:70px 20px 56px;position:relative}
+.arch::before{content:"";position:absolute;inset:8px;border:1px solid var(--line);border-radius:999px 999px 0 0;pointer-events:none}
+.small{margin:0;color:var(--accent)}
+.names{font-family:"Aref Ruqaa",serif;font-weight:700;font-size:clamp(46px,13vw,76px);line-height:1.25;margin:10px 0;color:var(--ink)}
+html[lang=en] .names{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500}
+.amp{display:block;font-size:.5em;color:var(--gold);font-weight:400}
+.dates{margin:14px 0 0}
+section{padding:56px 20px}
+h2{font-family:"Aref Ruqaa",serif;font-weight:400;font-size:34px;margin:0 0 28px;color:var(--accent)}
+html[lang=en] h2{font-family:"Cormorant Garamond",serif;font-style:italic}
+.events{display:grid;gap:18px;max-width:640px;margin:0 auto;grid-template-columns:1fr 1fr}
+.ev{background:var(--panel);border-radius:120px 120px 14px 14px;padding:44px 16px 28px;border:1px solid var(--line)}
+.ev h3{margin:0;font-family:"Aref Ruqaa",serif;font-size:28px;color:var(--accent);font-weight:700}
+html[lang=en] .ev h3{font-family:"Cormorant Garamond",serif}
+.ev .d{font-size:56px;line-height:1.1;margin:6px 0 0;font-weight:500;color:var(--ink)}
+.ev p{margin:2px 0}
+.count{display:flex;justify-content:center;gap:12px;max-width:520px;margin:0 auto}
+.count div{flex:1;border-top:2px solid var(--gold);padding-top:8px}
+.count b{display:block;font-size:40px;font-weight:500;line-height:1.2}
+.venue{max-width:520px;margin:0 auto;border:1px dashed var(--line);border-radius:14px;padding:20px}
+.map{display:inline-block;margin-top:6px;padding:8px 22px;border-radius:30px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:500}
+.map:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.music{position:fixed;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);inset-inline-start:16px;z-index:6;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--panel);font-size:20px;line-height:1;display:none;align-items:center;justify-content:center}
+.music.on{display:flex}
+.music:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+footer{padding:40px 20px 60px;color:var(--accent);font-family:"Aref Ruqaa",serif;font-size:26px}
+html[lang=en] footer{font-family:"Cormorant Garamond",serif;font-style:italic}
+.petal{position:fixed;top:-30px;z-index:5;pointer-events:none;filter:drop-shadow(0 1px 2px rgba(0,0,0,.3));opacity:0;animation:fall linear infinite;will-change:transform}
+@keyframes fall{0%{opacity:0;transform:translate3d(0,-5vh,0) rotate(0)}8%{opacity:.95}90%{opacity:.9}100%{opacity:0;transform:translate3d(var(--dx),108vh,0) rotate(var(--rot))}}
+@media (max-width:520px){.events{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:no-preference){.arch{animation:rise 1.2s ease-out both}@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+<button class="lang" id="lang" aria-label="Switch language">English</button>
+<button class="music" id="music" aria-label="Music">🔊</button>
+
+<header class="hero">
+  <div class="arch">
+    <p class="small" data-ar="بسم الله الرحمن الرحيم" data-en="In the name of God">بسم الله الرحمن الرحيم</p>
+    <p data-ar="يتشرف أهل العروسين بدعوتكم لمشاركتهم فرحتهم" data-en="Together with their families, you are invited to celebrate the wedding of">يتشرف أهل العروسين بدعوتكم لمشاركتهم فرحتهم</p>
+    <h1 class="names"><span data-ar="محمد" data-en="Mohamed">محمد</span><span class="amp">&amp;</span><span data-ar="أميرة" data-en="Amira">أميرة</span></h1>
+    <p class="dates" data-ar="١ نوفمبر ٢٠٢٦" data-en="1 November 2026">١ نوفمبر ٢٠٢٦</p>
+  </div>
+</header>
+
+<section>
+  <h2 data-ar="موعد الفرحة" data-en="Save the dates">موعد الفرحة</h2>
+  <div class="events">
+    <div class="ev">
+      <h3 data-ar="ليلة الحنة" data-en="Henna Night">ليلة الحنة</h3>
+      <p class="d">30</p>
+      <p data-ar="أكتوبر ٢٠٢٦ · الجمعة" data-en="October 2026, Friday">أكتوبر ٢٠٢٦ · الجمعة</p>
+      <p data-ar="بعد المغرب" data-en="After Maghrib">بعد المغرب</p>
+    </div>
+    <div class="ev">
+      <h3 data-ar="حفل الزفاف" data-en="The Wedding">حفل الزفاف</h3>
+      <p class="d">1</p>
+      <p data-ar="نوفمبر ٢٠٢٦ · الأحد" data-en="November 2026, Sunday">نوفمبر ٢٠٢٦ · الأحد</p>
+      <p data-ar="بعد المغرب" data-en="After Maghrib">بعد المغرب</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 data-ar="باقي على الفرح" data-en="Until the wedding">باقي على الفرح</h2>
+  <div class="count" id="count" aria-live="off">
+    <div><b id="cd">0</b><span data-ar="يوم" data-en="days">يوم</span></div>
+    <div><b id="ch">0</b><span data-ar="ساعة" data-en="hours">ساعة</span></div>
+    <div><b id="cm">0</b><span data-ar="دقيقة" data-en="minutes">دقيقة</span></div>
+    <div><b id="cs">0</b><span data-ar="ثانية" data-en="seconds">ثانية</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="venue">
+    <p data-ar="المناسبتان بعد المغرب في نفس المكان" data-en="Both evenings take place after Maghrib at the same venue.">المناسبتان بعد المغرب في نفس المكان</p>
+    <a class="map" href="https://www.google.com/maps?q=30.369278,30.988389" target="_blank" rel="noopener" data-ar="افتح الموقع على الخريطة" data-en="Open location in Maps">افتح الموقع على الخريطة</a>
+  </div>
+</section>
+
+<footer data-ar="وجودكم يكمّل فرحتنا" data-en="Your presence completes our joy">وجودكم يكمّل فرحتنا</footer>
+
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('lang');
+  function setLang(l){
+    root.lang=l;root.dir=l==='ar'?'rtl':'ltr';
+    document.querySelectorAll('[data-ar]').forEach(function(e){e.textContent=e.getAttribute('data-'+l)});
+    btn.textContent=l==='ar'?'English':'العربية';
+    document.title=l==='ar'?'دعوة زفاف محمد و أميرة':'Mohamed & Amira — Wedding Invitation';
+    tick();
+  }
+  btn.addEventListener('click',function(){setLang(root.lang==='ar'?'en':'ar')});
+  var target=new Date('2026-11-01T00:00:00+02:00').getTime();
+  function fmt(n){var t=String(n);return root.lang==='ar'?t.replace(/\d/g,function(d){return '٠١٢٣٤٥٦٧٨٩'.charAt(d)}):t}
+  function tick(){
+    var s=Math.max(0,Math.floor((target-Date.now())/1000));
+    document.getElementById('cd').textContent=fmt(Math.floor(s/86400));
+    document.getElementById('ch').textContent=fmt(Math.floor(s%86400/3600));
+    document.getElementById('cm').textContent=fmt(Math.floor(s%3600/60));
+    document.getElementById('cs').textContent=fmt(s%60);
+  }
+  if(!window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+    var n=window.innerWidth<600?22:36;
+    for(var i=0;i<n;i++){
+      var p=document.createElement('span'),sz=16+Math.random()*16;
+      p.className='petal';p.setAttribute('aria-hidden','true');
+      var red=Math.random()<.45,fill=red?'#C2283D':'#FFFFFF',stroke=red?'#8E1A2B':'#CDBFA3',pet='';
+      for(var k=0;k<5;k++){pet+='<ellipse cx="0" cy="-21" rx="16" ry="26" transform="rotate('+(k*72)+')" fill="'+fill+'" stroke="'+stroke+'" stroke-width="2"/>'}
+      p.innerHTML='<svg viewBox="-50 -50 100 100" width="100%" height="100%">'+pet+'<circle r="8" fill="'+(red?'#F3D27A':'#E0A83A')+'"/></svg>';
+      p.style.left=(Math.random()*100)+'vw';
+      p.style.width=p.style.height=sz+'px';
+      p.style.animationDuration=(8+Math.random()*8)+'s';
+      p.style.animationDelay=(Math.random()*7)+'s';
+      p.style.setProperty('--dx',((Math.random()-.5)*160)+'px');
+      p.style.setProperty('--rot',((Math.random()-.5)*900)+'deg');
+      document.body.appendChild(p);
+    }
+  }
+  var mb=document.getElementById('music'),au=new Audio('track.mp3'),started=false;
+  au.loop=true;au.preload='auto';
+  function icon(){mb.textContent=au.paused?'🔇':'🔊'}
+  au.addEventListener('canplay',function(){mb.classList.add('on');icon()});
+  au.addEventListener('play',icon);au.addEventListener('pause',icon);
+  mb.addEventListener('click',function(e){e.stopPropagation();started=true;if(au.paused){au.play().catch(function(){})}else{au.pause()}});
+  function firstTouch(e){
+    if(started||mb.contains(e.target))return;
+    started=true;au.play().catch(function(){});
+  }
+  ['pointerdown','keydown','touchstart'].forEach(function(t){document.addEventListener(t,firstTouch,{once:false,passive:true})});
+  tick();setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
