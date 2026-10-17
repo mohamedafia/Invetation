@@ -6,7 +6,7 @@
 <title>دعوة زفاف محمد و أميرة</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@400;500&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@400;500&family=Amiri+Quran&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#F6EFE2;--ink:#2A1A12;--accent:#8A4320;--gold:#A87414;--panel:#EADFCB;--line:#C9B48F;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -23,7 +23,7 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .arch{width:min(86vw,420px);border:2px solid var(--gold);border-radius:999px 999px 0 0;padding:70px 20px 56px;position:relative}
 .arch::before{content:"";position:absolute;inset:8px;border:1px solid var(--line);border-radius:999px 999px 0 0;pointer-events:none}
 .small{margin:0;color:var(--accent)}
-.names{font-family:"Aref Ruqaa",serif;font-weight:700;font-size:clamp(46px,13vw,76px);line-height:1.25;margin:10px 0;color:var(--ink)}
+.names{font-family:"Aref Ruqaa",serif;font-weight:700;font-size:clamp(38px,11vw,66px);line-height:1.25;margin:10px 0;color:var(--ink)}
 html[lang=en] .names{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500}
 .amp{display:block;font-size:.5em;color:var(--gold);font-weight:400}
 .dates{margin:14px 0 0}
@@ -42,6 +42,12 @@ html[lang=en] .ev h3{font-family:"Cormorant Garamond",serif}
 .venue{max-width:520px;margin:0 auto;border:1px dashed var(--line);border-radius:14px;padding:20px}
 .map{display:inline-block;margin-top:6px;padding:8px 22px;border-radius:30px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:500}
 .map:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+#intro{position:fixed;inset:0;z-index:10;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;transition:opacity .8s}
+#intro.gone{opacity:0;pointer-events:none}
+.ayah{font-family:"Amiri Quran","Amiri",serif;font-size:clamp(20px,5.4vw,28px);line-height:2.2;max-width:560px;margin:22px 0 0;color:var(--ink)}
+.bsm{font-family:"Aref Ruqaa",serif;font-size:clamp(34px,9vw,56px);color:var(--accent);margin:0}
+#hint{margin:26px 0 0;opacity:0;transition:opacity .6s}
+#hint.on{opacity:.8}
 header,section,footer{transition:opacity 1.6s ease}
 body.pre header,body.pre section,body.pre footer{opacity:0}
 .music{position:fixed;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);inset-inline-start:16px;z-index:6;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--panel);font-size:20px;line-height:1;display:none;align-items:center;justify-content:center}
@@ -56,6 +62,7 @@ html[lang=en] footer{font-family:"Cormorant Garamond",serif;font-style:italic}
 </style>
 </head>
 <body class="pre">
+<div id="intro"><p class="bsm">بسم الله الرحمن الرحيم</p><p class="ayah" lang="ar" dir="rtl">﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ﴾</p><p id="hint">المس الشاشة للبدء</p></div>
 <button class="lang" id="lang" aria-label="Switch language">English</button>
 <button class="music" id="music" aria-label="Music">🔊</button>
 
@@ -63,7 +70,7 @@ html[lang=en] footer{font-family:"Cormorant Garamond",serif;font-style:italic}
   <div class="arch">
     <p class="small" data-ar="بسم الله الرحمن الرحيم" data-en="In the name of God">بسم الله الرحمن الرحيم</p>
     <p data-ar="يتشرف أهل العروسين بدعوتكم لمشاركتهم فرحتهم" data-en="Together with their families, you are invited to celebrate the wedding of">يتشرف أهل العروسين بدعوتكم لمشاركتهم فرحتهم</p>
-    <h1 class="names"><span data-ar="محمد" data-en="Mohamed">محمد</span><span class="amp">&amp;</span><span data-ar="أميرة" data-en="Amira">أميرة</span></h1>
+    <h1 class="names"><span data-ar="م / محمد" data-en="Eng. Mohamed">م / محمد</span><span class="amp">&amp;</span><span data-ar="د / أميرة" data-en="Dr. Amira">د / أميرة</span></h1>
     <p class="dates" data-ar="١ نوفمبر ٢٠٢٦" data-en="1 November 2026">١ نوفمبر ٢٠٢٦</p>
   </div>
 </header>
@@ -144,17 +151,35 @@ html[lang=en] footer{font-family:"Cormorant Garamond",serif;font-style:italic}
     }
   }
   }
-  var mb=document.getElementById('music'),au=new Audio('track.mp3'),started=false;
-  au.loop=true;au.preload='auto';
+  var mb=document.getElementById('music'),au=new Audio(),started=false,trackMode=false;
+  au.preload='auto';
   function icon(){mb.textContent=au.paused?'🔇':'🔊'}
-  au.addEventListener('canplay',function(){mb.classList.add('on');icon()});
+  au.addEventListener('canplay',function(){if(!trackMode)return;mb.classList.add('on');icon()});
   au.addEventListener('play',icon);au.addEventListener('pause',icon);
   mb.addEventListener('click',function(e){e.stopPropagation();started=true;if(au.paused){au.play().catch(function(){})}else{au.pause()}});
   function reveal(){document.body.classList.remove('pre')}
-  startPetals();setTimeout(reveal,3000);
-  au.play().then(function(){started=true}).catch(function(){});
-  function unlock(){if(started)return;started=true;au.play().catch(function(){started=false})}
-  ['pointerup','click','touchend','keydown'].forEach(function(t){window.addEventListener(t,unlock,{passive:true})});
+  var intro=document.getElementById('intro'),hint=document.getElementById('hint'),EV=['pointerup','click','touchend','keydown'];
+  function waitTap(fn){
+    hint.classList.add('on');
+    function once(){hint.classList.remove('on');EV.forEach(function(t){window.removeEventListener(t,once)});fn()}
+    EV.forEach(function(t){window.addEventListener(t,once)});
+  }
+  function playStep(src,next){
+    var done=false;
+    function go(){if(done)return;done=true;au.onended=null;au.onerror=null;next()}
+    au.onended=go;au.onerror=go;au.loop=false;au.src=src;
+    function attempt(){
+      var pr=au.play();
+      if(pr&&pr.catch)pr.catch(function(err){if(err&&err.name==='NotAllowedError'){waitTap(attempt)}else{go()}});
+    }
+    attempt();
+  }
+  function finishIntro(){
+    intro.classList.add('gone');startPetals();
+    trackMode=true;started=true;au.loop=true;au.src='track.mp3';au.play().catch(function(){});
+    setTimeout(function(){reveal();intro.remove()},3000);
+  }
+  playStep('ayah.mp3',function(){playStep('zaghrouta.mp3',finishIntro)});
   tick();setInterval(tick,1000);
 })();
 </script>
